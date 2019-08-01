@@ -1,0 +1,37 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+string s,t;
+    while(cin>>t>>s){
+            int k=0;
+     for(int i=0;i<t.length();i++)
+    {
+        if(k<s.length()&&t[i]==s[k])
+        {
+            k++;
+            continue;
+        }
+
+
+    }
+    if(k<s.length())
+    {
+        cout<<"NO"<<endl;
+    }
+    else
+        cout<<"YES"<<endl;
+}
+    return 0;
+}
+/*
+ADXCPY AXY
+YES
+YADXCP AXY
+NO
+geeksforgeeks geeks
+YES
+*/
